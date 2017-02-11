@@ -3,7 +3,7 @@
 # Table name: events
 #
 #  id          :integer          not null, primary key
-#  media_id    :integer
+#  medium_id   :integer
 #  trigger_id  :integer
 #  user_id     :integer
 #  description :text
@@ -12,4 +12,7 @@
 #
 
 class Event < ApplicationRecord
+  belongs_to :user
+  belongs_to :trigger
+  belongs_to :medium
 end

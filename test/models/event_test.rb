@@ -3,7 +3,7 @@
 # Table name: events
 #
 #  id          :integer          not null, primary key
-#  media_id    :integer
+#  medium_id   :integer
 #  trigger_id  :integer
 #  user_id     :integer
 #  description :text

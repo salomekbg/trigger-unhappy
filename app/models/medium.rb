@@ -11,4 +11,7 @@
 #
 
 class Medium < ApplicationRecord
+  has_many :events
+  has_many :users, through: :events
+  has_many :triggers, through: :events
 end

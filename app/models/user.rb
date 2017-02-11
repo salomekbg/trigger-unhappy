@@ -11,4 +11,7 @@
 #
 
 class User < ApplicationRecord
+  has_many :events
+  has_many :triggers, through: :events
+  has_many :media, through: :events
 end

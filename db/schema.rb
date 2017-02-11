@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170211174315) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.integer  "media_id"
+    t.integer  "medium_id"
     t.integer  "trigger_id"
     t.integer  "user_id"
     t.text     "description"
